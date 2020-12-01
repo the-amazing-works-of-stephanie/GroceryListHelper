@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const React = require('react')
 
 function createWindow () {
     const win = new BrowserWindow({
@@ -9,6 +10,7 @@ function createWindow () {
         }
     })
 
+    //win.loadURL('http://localhost:3000/')
     win.loadFile('index.html')
     win.webContents.openDevTools()
 }
