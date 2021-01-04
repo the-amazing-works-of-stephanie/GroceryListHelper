@@ -14,7 +14,7 @@ function createWindow () {
     win.loadFile('index.html')
     win.webContents.openDevTools()
 }
-
+//test
 app.whenReady().then(createWindow)
 
 app.on('window-all-closed', () => {
