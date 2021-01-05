@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
+<!-- body background="Background.jpg" -->
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 </head>
-<body style="background: white;">
-<h1>Hello World!</h1>
-<p>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-</p>
+<!-- <body style="background: white;"> -->
 </body>
 </html>
+
+<style type="text/css">
+    html,
+    body { height: 100%; width: 100% }
+
+    body { background-image: url("Background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; }
+
+    h1 {
+        color: #363C4C;
+        font-family: "Ink Free";
+        font-size: 500%;
+        font-weight: bold;
+        text-align: center;
+    }
+    p {
+        color: #828692;
+        font-family: Perpetua;
+        font-size: 300%;
+        font-style: italic;
+        text-align: center;
+    }
+
+</style>
+
+<h1>Welcome to [App Name]!</h1>
+<p>What would you like to do today?</p>
