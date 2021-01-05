@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="Added a button!">
+      <change afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
       <workItem from="1606844568178" duration="1543000" />
       <workItem from="1606848272584" duration="139000" />
       <workItem from="1609800971570" duration="359000" />
-      <workItem from="1609872182080" duration="5185000" />
+      <workItem from="1609872182080" duration="5572000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1606836136767</created>
@@ -108,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609877333046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added a button!">
+      <created>1609877642258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609877642258</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added a button!">
+      <created>1609877666273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609877666273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
