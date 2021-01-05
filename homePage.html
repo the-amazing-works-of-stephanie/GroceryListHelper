@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Doin' a Thing</title>
 </head>
 <!-- <body style="background: white;"> -->
-</body>
-</html>
+<body>
 
 <style type="text/css">
-    html,
-    body { height: 100%; width: 100% }
-
-    body { background-image: url("Background.jpg");
+    html, body {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url("Background.jpg");
         background-repeat: no-repeat;
-        background-size: cover; }
+        background-size: cover;
+    }
+
+    h0 { margin:0}
+    .spacer {
+        float: left;
+        width: 100%;
+        height: 50%;
+        margin-top: -320px;
+    }
+    .outer {
+        text-align:center;
+        margin:auto;
+        position:relative;
+    }
 
     h1 {
         color: #363C4C;
@@ -22,6 +37,7 @@
         font-size: 500%;
         font-weight: bold;
         text-align: center;
+        margin: 25px;
     }
     p {
         color: #828692;
@@ -29,11 +45,13 @@
         font-size: 300%;
         font-style: italic;
         text-align: center;
+        margin: 15px;
     }
 
     .button {
-        background-color: #363C4C;
-        color: white;
+        background-color: #A37F5D;
+        color: #E5E6EA;
+        font-family: "Ink Free";
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         margin: 5px auto 0px;
         position: relative;
@@ -48,7 +66,14 @@
 
 </style>
 
-<a href="myrecipesPage.html" class ="button"> Go to My Recipes </a>
+<div class="spacer"></div>
+<div class="outer">
+    <canvas width=auto height="auto"></canvas>
+</div>
+
+<a href="myrecipesPage.html" class ="button"> My Recipes </a>
 
 <h1>Welcome to [App Name]!</h1>
 <p>What would you like to do today?</p>
+</body>
+</html>
