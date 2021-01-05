@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9fdf508-1766-4fa6-be32-5f793cd8b367" name="Default Changelist" comment="Added a button!">
+    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="first button">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_4_2021_5_13_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_4_2021_5_13_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1l2Rk1PztMpeI8SldDUIwjcCEvl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -124,21 +125,7 @@
       <option name="project" value="LOCAL" />
       <updated>1609877666273</updated>
     </task>
-    <task id="LOCAL-00007" summary="Added a button!">
-      <created>1609878906663</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1609878906663</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added a button!">
-      <created>1609878985119</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1609878985119</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +147,6 @@
     <MESSAGE value="." />
     <MESSAGE value="Adding a &quot;future goals&quot; page" />
     <MESSAGE value="Added some life to the main page!" />
-    <MESSAGE value="Added some button details" />
     <MESSAGE value="Added a button!" />
     <option name="LAST_COMMIT_MESSAGE" value="Added a button!" />
   </component>

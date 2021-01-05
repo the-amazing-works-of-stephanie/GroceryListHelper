@@ -9,8 +9,6 @@ function createWindow () {
             nodeIntegration: true
         }
     })
-
-    //win.loadURL('http://localhost:3000/')
     win.loadFile('homePage.html')
     win.webContents.openDevTools()
 }
