@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="Made aesthetic changes to button">
+    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="first button/link to myrecipes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
     </list>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609877666273</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first button/link to myrecipes">
+      <created>1609882257108</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609882257108</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +153,7 @@
     <MESSAGE value="Adding a &quot;future goals&quot; page" />
     <MESSAGE value="Added some life to the main page!" />
     <MESSAGE value="Added a button!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a button!" />
+    <MESSAGE value="first button/link to myrecipes" />
+    <option name="LAST_COMMIT_MESSAGE" value="first button/link to myrecipes" />
   </component>
 </project>

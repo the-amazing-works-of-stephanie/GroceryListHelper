@@ -1,35 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <title>Doin' a Thing</title>
-</head>
-<!-- <body style="background: white;"> -->
-<body>
-
 <style type="text/css">
-    html, body {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        background-image: url("Background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    html,
+    body { height: 100%; width: 100% }
 
-    h0 { margin:0}
-    .spacer {
-        float: left;
-        width: 100%;
-        height: 50%;
-        margin-top: -320px;
-    }
-    .outer {
-        text-align:center;
-        margin:auto;
-        position:relative;
-    }
+    body { background-image: url("Background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; }
 
     h1 {
         color: #363C4C;
@@ -37,7 +15,6 @@
         font-size: 500%;
         font-weight: bold;
         text-align: center;
-        margin: 25px;
     }
     p {
         color: #828692;
@@ -45,16 +22,13 @@
         font-size: 300%;
         font-style: italic;
         text-align: center;
-        margin: 15px;
     }
 
     .button {
-        background-color: #A37F5D;
-        color: #E5E6EA;
-        font-family: "Ink Free";
+        background-color: #363C4C;
+        color: white;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         margin: 5px auto 0px;
-        position: relative;
         min-width: 25%;
         max-width: 100%;
         padding: 12px 4%;
@@ -63,17 +37,22 @@
         display: inline-block;
         font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
     }
-
 </style>
-
-<div class="spacer"></div>
-<div class="outer">
-    <canvas width=auto height="auto"></canvas>
-</div>
-
-<a href="myrecipesPage.html" class ="button"> My Recipes </a>
-
-<h1>Welcome to [App Name]!</h1>
-<p>What would you like to do today?</p>
+</head>
+<body>
+    <div style = "position:relative;left:1%;top:1%;">
+        <a href="myrecipesPage.html" class ="button"> Go to My Recipes </a>
+    </div>
+    <div style = "position:relative;left:48%;top:73%;">
+        <a href="myrecipesPage.html" class ="button"> Go to My Recipes Also </a>
+    </div>
+    <div style = "position:relative;left:0%;top:-15%;">
+        <h1>Welcome to [App Name]!</h1>
+    </div>
+    <div style = "position:relative;left:0%;top:-15%;">
+        <p>What would you like to do today?</p>
+    </div>
 </body>
+
+
 </html>
