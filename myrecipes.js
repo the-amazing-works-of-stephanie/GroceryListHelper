@@ -11,7 +11,7 @@ function createWindow () {
     })
 
     //win.loadURL('http://localhost:3000/')
-    win.loadFile('homePage.html')
+    win.loadFile('myrecipesPage.html')
     win.webContents.openDevTools()
 }
 //test
