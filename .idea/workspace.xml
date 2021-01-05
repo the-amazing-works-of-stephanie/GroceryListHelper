@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="Added a button!">
-      <changelist_data name="alexyxiao4" email="123qweasdzxc?" />
-      <change afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrecipes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/myrecipesPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +20,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1l2Rk1PztMpeI8SldDUIwjcCEvl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,7 +78,7 @@
       <workItem from="1606844568178" duration="1543000" />
       <workItem from="1606848272584" duration="139000" />
       <workItem from="1609800971570" duration="359000" />
-      <workItem from="1609872182080" duration="4864000" />
+      <workItem from="1609872182080" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1606836136767</created>
@@ -107,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609874573800</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a button!">
+      <created>1609877333046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609877333046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
