@@ -34,14 +34,16 @@
     button {
         background-color: #363C4C;
         color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         margin: 5px auto 0px;
         position: relative;
-        width: 200px;
-        padding: 15px 4%;
+        min-width: 25%;
+        max-width: 100%;
+        padding: 12px 4%;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 200%;
+        font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
     }
 
 </style>
@@ -50,4 +52,3 @@
 
 <h1>Welcome to [App Name]!</h1>
 <p>What would you like to do today?</p>
-<p>just testing github</p>
