@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="gitignore .idea" />
+    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="Separated css/html files-fixed">
+      <change afterPath="$PROJECT_DIR$/homeCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1l2Rk1PztMpeI8SldDUIwjcCEvl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -30,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -41,11 +54,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexi\WebstormProjects\GroceryListHelper" />
       <recent name="C:\Users\tsuyu\WebstormProjects\GroceryListHelper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -80,6 +94,11 @@
       <workItem from="1606848272584" duration="139000" />
       <workItem from="1609800971570" duration="359000" />
       <workItem from="1609872182080" duration="5572000" />
+      <workItem from="1609893052549" duration="857000" />
+      <workItem from="1609894734353" duration="618000" />
+      <workItem from="1609895836754" duration="28000" />
+      <workItem from="1609896833510" duration="1354000" />
+      <workItem from="1609956162120" duration="1519000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1606836136767</created>
@@ -137,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609892038988</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="gitignore .idea">
+      <created>1609892718027</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609892718027</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gitignore /.idea (oops)">
+      <created>1609897242291</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609897242291</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +195,9 @@
     <MESSAGE value="Added a button!" />
     <MESSAGE value="first button/link to myrecipes" />
     <MESSAGE value="gitignore .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore .idea" />
+    <MESSAGE value="gitignore /.idea (oops)" />
+    <MESSAGE value="Separated css/html files" />
+    <MESSAGE value="Separated css/html files-fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated css/html files-fixed" />
   </component>
 </project>
