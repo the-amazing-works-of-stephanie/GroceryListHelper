@@ -1,4 +1,4 @@
-html {
+body {
     height: 100%;
     width: 100%;
     background-image: url("Background.jpg");
@@ -20,8 +20,11 @@ html {
 .home_button {
     float: left;
     width: 25%;
-    height: 200px;
+    height: 15%;
     display: inline-block;
+    position:absolute;
+    top:0%;
+    left:1%;
 }
 .header_text {
     float: left;
@@ -31,8 +34,11 @@ html {
 }
 .exit_button {
     float: right;
-    width: 25%;
-    height: 200px;
+    width: 8%;
+    height: 13%;
+    position:absolute;
+    bottom:3%;
+    right:1%;
 }
 
 h1 {
