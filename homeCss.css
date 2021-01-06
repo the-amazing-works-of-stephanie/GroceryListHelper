@@ -70,3 +70,18 @@ p {
     display: inline-block;
     font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
 }
+
+.exit_click{
+    background-color: #A37F5D;
+    color: #E5E6EA;
+    font-family: "Ink Free",serif;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 15px auto 0;
+    min-width: 25%;
+    max-width: 100%;
+    padding: 12px 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
+}

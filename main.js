@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const React = require('react')
+const remote = require('electron').remote
 
 function createWindow () {
     const win = new BrowserWindow({
@@ -14,6 +15,11 @@ function createWindow () {
 }
 //test
 app.whenReady().then(createWindow)
+
+const {ipcMain} = require('electron')
+ipcMain.on('closeWindow', (evt, arg) => {
+    app.quit()
+})
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
