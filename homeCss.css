@@ -1,4 +1,4 @@
-html, body {
+html {
     height: 100%;
     width: 100%;
     background-image: url("Background.jpg");
@@ -21,7 +21,7 @@ html, body {
     float: left;
     width: 33.3%;
     padding: 40px;
-    height: 475px;
+    height: 0px;
     line-height: 2;
     display: inline-block;
     vertical-align: middle;
