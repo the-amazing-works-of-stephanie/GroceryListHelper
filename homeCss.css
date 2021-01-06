@@ -8,9 +8,18 @@ body {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 100%));
-    grid-template-rows: auto;
-    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.parent > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .home_button {
     float: left;
@@ -37,7 +46,8 @@ body {
 h1 {
     color: #363C4C;
     font-family: "Ink Free",serif;
-    font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);
+    /*font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);*/
+    font-size: 90px;
     font-weight: bold;
     text-align: center;
     margin: auto;
@@ -45,7 +55,8 @@ h1 {
 p {
     color: #828692;
     font-family: Perpetua,serif;
-    font-size: 300%;
+    /*font-size: 300%;*/
+    font-size: 75px;
     font-style: italic;
     text-align: center;
     margin: auto;
