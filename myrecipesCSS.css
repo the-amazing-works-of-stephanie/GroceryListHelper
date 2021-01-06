@@ -1,0 +1,94 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 100%));
+    grid-template-rows: auto;
+    column-gap: 10px;
+}
+.home_button {
+    float: left;
+    width: 8%;
+    height: 13%;
+    position:absolute;
+    top: 1%;
+    left:2%;
+}
+.header_text {
+    text-align: center;
+    width: 25%;
+    height: 200px;
+}
+.exit_button {
+    float: right;
+    width: 8%;
+    height: 13%;
+    position:absolute;
+    top: 1%;
+    right:2%;
+}
+
+h1 {
+    color: #363C4C;
+    font-family: "Ink Free",serif;
+    font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+p {
+    color: #828692;
+    font-family: Perpetua,serif;
+    font-size: 300%;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+
+.button {
+    background-color: #A37F5D;
+    color: #E5E6EA;
+    font-family: "Ink Free",serif;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 15px auto 0;
+    min-width: 25%;
+    max-width: 100%;
+    padding: 12px 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
+}
+
+.exit_click{
+    background-color: #A37F5D;
+    color: #E5E6EA;
+    font-family: "Ink Free",serif;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 15px auto 0;
+    min-width: 25%;
+    max-width: 100%;
+    padding: 12px 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
+}
+middle-button {
+    background-color: #363C4C;
+}
+top-button {
+    background-color: #363C4C;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
