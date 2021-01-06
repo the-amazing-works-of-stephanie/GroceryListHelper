@@ -6,30 +6,23 @@ body {
     background-size: cover;
 }
 
-*{
-    box-sizing: border-box;
-}
-
 .parent {
-    height: 100%;
-    width: 100%;
-    background-image: url("Background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 100%));
+    grid-template-rows: auto;
+    column-gap: 10px;
 }
 .home_button {
     float: left;
-    width: 25%;
-    height: 15%;
-    display: inline-block;
+    width: 8%;
+    height: 13%;
     position:absolute;
-    top:0%;
-    left:1%;
+    top: 1%;
+    left:2%;
 }
 .header_text {
-    float: left;
     text-align: center;
-    width: 50%;
+    width: 25%;
     height: 200px;
 }
 .exit_button {
@@ -37,8 +30,8 @@ body {
     width: 8%;
     height: 13%;
     position:absolute;
-    bottom:3%;
-    right:1%;
+    top: 1%;
+    right:2%;
 }
 
 h1 {
@@ -47,6 +40,7 @@ h1 {
     font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);
     font-weight: bold;
     text-align: center;
+    margin: auto;
 }
 p {
     color: #828692;
@@ -54,6 +48,7 @@ p {
     font-size: 300%;
     font-style: italic;
     text-align: center;
+    margin: auto;
 }
 
 .button {
