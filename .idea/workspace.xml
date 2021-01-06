@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="Testing &lt;div&gt; sections">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
-    </list>
+    <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="gitignore .idea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -66,6 +63,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\alexi\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="" />
@@ -130,12 +130,12 @@
       <option name="project" value="LOCAL" />
       <updated>1609882257108</updated>
     </task>
-    <task id="LOCAL-00008" summary="Testing &lt;div&gt; sections">
-      <created>1609891880780</created>
+    <task id="LOCAL-00008" summary="gitignore .idea">
+      <created>1609892038988</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1609891880780</updated>
+      <updated>1609892038988</updated>
     </task>
     <option name="localTasksCounter" value="9" />
     <servers />
@@ -161,7 +161,7 @@
     <MESSAGE value="Added some life to the main page!" />
     <MESSAGE value="Added a button!" />
     <MESSAGE value="first button/link to myrecipes" />
-    <MESSAGE value="Testing &lt;div&gt; sections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing &lt;div&gt; sections" />
+    <MESSAGE value="gitignore .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore .idea" />
   </component>
 </project>
