@@ -2,6 +2,7 @@
 A little app to help the frustrated grocery shopper automate their list-making process!
 
 Goal #1: Finish Home Page by 1/8/2021
+
 Goal #2: TBD!
 
 
