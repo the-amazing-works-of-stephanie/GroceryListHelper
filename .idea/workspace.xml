@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df10cd6-3184-4561-ada4-5fa6f9652b46" name="Default Changelist" comment="Separated css/html files-fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_4_2021_5_13_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_4_2021_5_13_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
     </list>
@@ -97,7 +98,7 @@
       <workItem from="1609894734353" duration="618000" />
       <workItem from="1609895836754" duration="28000" />
       <workItem from="1609896833510" duration="1354000" />
-      <workItem from="1609956162120" duration="2471000" />
+      <workItem from="1609956162120" duration="1519000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1606836136767</created>
@@ -169,14 +170,7 @@
       <option name="project" value="LOCAL" />
       <updated>1609897242291</updated>
     </task>
-    <task id="LOCAL-00011" summary="Separated css/html files-fixed">
-      <created>1609958188913</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1609958188913</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
