@@ -15,12 +15,22 @@ body {
 .parent > div {
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
+}
+.sub-parent {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 50px;
+}
+.sub-parent > div {
+    text-align: center;
+    padding: 20px 0;
 }
 .box1 {
     grid-column-start: 1;
     grid-column-end: 2;
 }
+
 .home_button {
     float: left;
     width: 8%;
@@ -41,6 +51,11 @@ body {
     position:absolute;
     top: 1%;
     right:2%;
+}
+.center_buttons {
+    float: left;
+    width: 8%;
+    height: 13%;
 }
 
 h1 {
