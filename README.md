@@ -1,7 +1,7 @@
 # GroceryListHelper
 A little app to help the frustrated grocery shopper automate their list-making process!
 
-Goal #1: Finish Home Page by 1/8/2021 ~DONE~
+Goal #1: Finish Home Page by 1/8/2021 *DONE*
 
 Goal #2: Finish general layout of all webpages by 1/15/2021
 
