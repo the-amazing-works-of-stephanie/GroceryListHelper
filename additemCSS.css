@@ -6,11 +6,12 @@ body {
     background-size: cover;
 }
 
-.parent {
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 100%));
-    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 8fr;
     column-gap: 10px;
+    grid-row-gap: 25px;
 }
 .home_button {
     float: left;
@@ -33,7 +34,13 @@ body {
     top: 1%;
     right:2%;
 }
-
+.back_button {
+    float: left;
+    height: 13%;
+    position:absolute;
+    top: 1%;
+    left:2%;
+}
 h1 {
     color: #363C4C;
     font-family: "Ink Free",serif;
