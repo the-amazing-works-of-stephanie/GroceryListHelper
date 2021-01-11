@@ -135,6 +135,9 @@ p {
 }
 
 .center_button {
+    /* text-decoration removes the hyperlink underline but also
+     removed box shadow (I think) */
+    text-decoration: none;
     justify-content: center;
     align-content: center;
     background-color: #9D9D9D;
