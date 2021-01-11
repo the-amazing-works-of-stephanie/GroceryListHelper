@@ -8,36 +8,85 @@ body {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 100%));
-    grid-template-rows: auto;
+    grid-template-columns: auto 10% auto auto auto auto;
+    grid-template-rows: 8fr;
     column-gap: 10px;
+    grid-row-gap: 25px;
 }
 .home_button {
-    float: left;
-    width: 8%;
     height: 13%;
-    position:absolute;
     top: 1%;
     left:2%;
 }
 .header_text {
     text-align: center;
-    width: 25%;
-    height: 200px;
+    height: 13%;
 }
 .exit_button {
-    float: right;
-    width: 8%;
     height: 13%;
-    position:absolute;
     top: 1%;
     right:2%;
+}
+.container1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.container2 {
+    grid-row: span 1 / 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.container3{
+    align-self: end;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+.container4{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    border-bottom: 6px solid #5B5B5B;
+}
+.container6 {
+    display: flex;
+    justify-items: center;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+.container7{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    border: 2px solid black;
+    background: white;
+}
+.box8 {
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 9;
+}
+.box9 {
+    justify-self: center;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 9;
 }
 
 h1 {
     color: #363C4C;
     font-family: "Ink Free",serif;
     font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+h2 {
+    color: 	#686868;
+    font-family: "Ink Free",serif;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     margin: auto;
@@ -80,15 +129,26 @@ p {
     display: inline-block;
     font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
 }
-middle-button {
-    background-color: #363C4C;
+
+.back_button {
+    float: left;
+    height: 13%;
+    position:absolute;
+    top: 1%;
+    left:2%;
 }
-top-button {
-    background-color: #363C4C;
-    color: white;
-    padding: 15px 32px;
+
+.center_button {
+    justify-content: center;
+    align-content: center;
+    background-color: #9D9D9D;
+    color: #0A3350;
+    font-family: "Ink Free",serif;
+    margin: 15px auto 0;
+    padding: 8px 4%;
+    min-width: 25%;
+    max-width: 100%;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: xx-large;
+    border-radius: 12px;
 }

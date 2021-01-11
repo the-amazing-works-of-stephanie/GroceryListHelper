@@ -6,10 +6,15 @@ function createWindow () {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
+        minWidth: 600,
+        minHeight: 200,
+        center: true,
         webPreferences: {
             nodeIntegration: true
         }
     })
+
+    win.maximize();
     win.loadFile('homePage.html')
     win.webContents.openDevTools()
 }

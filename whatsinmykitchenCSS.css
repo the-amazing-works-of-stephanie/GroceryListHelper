@@ -13,8 +13,6 @@ body {
     column-gap: 10px;
 }
 .home_button {
-    float: left;
-    width: 8%;
     height: 13%;
     position:absolute;
     top: 1%;
@@ -22,8 +20,7 @@ body {
 }
 .header_text {
     text-align: center;
-    width: 25%;
-    height: 200px;
+    height: 13%;
 }
 .exit_button {
     float: right;

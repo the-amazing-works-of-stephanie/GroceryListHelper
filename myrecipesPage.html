@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <title>My Recipes</title>
     <link rel="stylesheet" href="myrecipesCSS.css">
 </head>
+<body>
 
+<div class = "parent">
+    <div class = "container1">
+        <div class = "back_button">
+            <a href="homePage.html" class ="button"> Back </a>
+        </div>
+    </div>
+    <div class = "container2">
+        <h1>My Recipes</h1>
+    </div>
+    <div class = "container3">
+        <div class = "exit_button">
+            <button class ="button" id = "closeWindow"> Exit </button>
+        </div>
+    </div>
+    <div class = "container4">
+        <h2>Search Bar</h2>
+    </div>
+    <div class = "container6">
+        <button class ="center_button" hidden> Add Item </button>
+    </div>
+    <div class = "container7" id="textBox">
+        <h2>Recipes Go Here</h2>
+    </div>
+    <div class = "container6">
+        <button class ="center_button" id = "addItem"> Add Item </button>
+    </div>
+    <div class = "container6">
+        <button class ="center_button" id = "removeItem"> Remove Item </button>
+    </div>
+    <div class = "container6">
+        <button class ="center_button" id = "recipes"> My Recipes </button>
+    </div>
+    <div class = "container6">
+        <button class ="center_button" id = "mealPlan"> My Meal Plan </button>
+    </div>
+    <div class = "container6">
+        <button class ="center_button" id = "email"> Email List </button>
+    </div>
+    <div class = "box8">
+        <div class = "center_buttons">
+            <a href="myrecipesPage.html" class ="button"> Help </a>
+        </div>
+    </div>
+    <div class = "box9">
+        <div class = "center_buttons">
+            <a href="myrecipesPage.html" class ="button"> Settings </a>
+        </div>
+    </div>
 
-<top-button>Back</top-button>
+</div>
 
-<h1>My Recipes</h1>
-<p>What would you like to do today?</p>
+<script src="exitButton.js"></script>
+<script src="fetchGrocery.js"></script>
+
 </body>
 </html>
