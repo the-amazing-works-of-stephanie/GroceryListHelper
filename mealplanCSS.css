@@ -64,6 +64,7 @@ body {
 }
 
 .button_1 {         /* top-left button for the 4-button layout */
+    display: inline-block;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -119,7 +120,9 @@ p {                /* for regular text */
 }
 
 .center_button {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     background-color: #A37F5D;
