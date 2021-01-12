@@ -8,7 +8,7 @@ body {
 }
 
 .parent {
-    height: 100vh;      /* 100 vh is entire height of viewport */
+    height: 90vh;      /* 100 vh is entire height of viewport */
     display: grid;
     grid-template-columns: 1fr;     /* 1fr means "take up any leftover space */
     grid-template-rows: auto 1fr auto;
@@ -132,4 +132,3 @@ p {                /* for regular text */
     text-decoration: none;
     font-size: 500%;
 }
-
