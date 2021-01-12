@@ -65,12 +65,21 @@ body {
 }
 
 .button_1 {         /* top-left button for the 4-button layout */
+    justify-self: stretch;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
+    display: inline-block;
+    padding: 15px;
+    background-color: #A37F5D;
+    color: #E5E6EA;
+    font-family: "Ink Free",serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 500%;
 }
 .button_2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 .button_3 {
     grid-column-start: 2;
@@ -109,5 +118,6 @@ p {                /* for regular text */
     text-align: center;
     text-decoration: none;
     font-size: 500%;
+    justify-self: stretch;
 }
 
