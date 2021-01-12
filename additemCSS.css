@@ -4,86 +4,157 @@ body {
     background-image: url("Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
-.grid {
+.parent {
+    height: 95vh;      /* 100 vh is entire height of viewport */
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: 8fr;
-    column-gap: 10px;
-    grid-row-gap: 25px;
+    grid-template-columns: 1fr;     /* 1fr means "take up any leftover space */
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    padding: 20px 20px 20px 20px;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
 }
-.home_button {
-    float: left;
-    width: 8%;
-    height: 13%;
-    position:absolute;
-    top: 1%;
-    left:2%;
+
+.parent > header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0,600px) 1fr;
 }
-.header_text {
+
+.parent > main {
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 10% 14% 14% 14% 20% 10%;
+    grid-template-columns: 12% 13% 19% 19% 19% 18%;
+}
+
+.parent > footer {
+    grid-area: footer;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0,600px) 1fr;
+}
+
+.back_button {      /* back button in header */
+    justify-self: stretch;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.header_text {      /* title in header */
     text-align: center;
-    width: 25%;
-    height: 200px;
 }
-.exit_button {
-    float: right;
-    width: 8%;
-    height: 13%;
-    position:absolute;
-    top: 1%;
-    right:2%;
+.exit_button {      /* exit button in header */
+    justify-self: end;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
-.back_button {
-    float: left;
-    height: 13%;
-    position:absolute;
-    top: 1%;
-    left:2%;
+.additem_item_desc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
-h1 {
+.additem_qty_desc{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.additem_item_box {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.additem_quantity_box {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+.additem_add_list{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.additem_edit_item{
+     grid-column-start: 4;
+     grid-column-end: 5;
+     grid-row-start: 5;
+     grid-row-end: 5;
+ }
+.additem_myrecipes{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+h1 {                /* for page headers */
     color: #363C4C;
-    font-family: "Ink Free",serif;
-    font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);
+    font-family: "Ink Free", serif;
     font-weight: bold;
     text-align: center;
-    margin: auto;
 }
-p {
+
+h2 {                 /* for sub-header text */
     color: #828692;
-    font-family: Perpetua,serif;
-    font-size: 300%;
+    font-family: "Perpetua", serif;
     font-style: italic;
     text-align: center;
-    margin: auto;
+    font-size: 100%;
 }
 
-.button {
+
+p {                /* for regular text */
+    color: #828692;
+    font-family: "Perpetua", serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 250%;
+}
+
+.button {         /* for all buttons */
+    display: inline-block;
+    padding: 15px;
     background-color: #A37F5D;
     color: #E5E6EA;
     font-family: "Ink Free",serif;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 15px auto 0;
-    min-width: 25%;
-    max-width: 100%;
-    padding: 12px 4%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
+    font-size: 500%;
 }
 
-.exit_click{
+
+
+.center_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     background-color: #A37F5D;
     color: #E5E6EA;
     font-family: "Ink Free",serif;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 15px auto 0;
-    min-width: 25%;
-    max-width: 100%;
-    padding: 12px 4%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
+    font-size: 200%;
 }
+
+
