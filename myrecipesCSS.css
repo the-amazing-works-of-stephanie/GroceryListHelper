@@ -4,152 +4,157 @@ body {
     background-image: url("Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 .parent {
+    height: 95vh;      /* 100 vh is entire height of viewport */
     display: grid;
-    grid-template-columns: auto 10% auto auto auto auto;
-    grid-template-rows: 8fr;
-    column-gap: 10px;
-    grid-row-gap: 25px;
+    grid-template-columns: 1fr;     /* 1fr means "take up any leftover space */
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    padding: 20px 20px 20px 20px;
+    grid-template-areas:
+        'header'
+        'myrecipesmain'
+        'footer';
 }
-.home_button {
-    height: 13%;
-    top: 1%;
-    left:2%;
+
+.parent > header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0,600px) 1fr;
 }
-.header_text {
-    text-align: center;
-    height: 13%;
+
+.parent > myrecipesmain {
+    grid-area: myrecipesmain;
+    overflow: auto;         /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 50px 15% 15% 15% auto;
+    grid-template-columns: auto auto auto auto auto 15% auto;
 }
-.exit_button {
-    height: 13%;
-    top: 1%;
-    right:2%;
+
+.parent > footer {
+    grid-area: footer;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0,600px) 1fr;
 }
-.container1 {
+
+.back_button {      /* back button in header */
+    justify-self: stretch;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
 }
-.container2 {
-    grid-row: span 1 / 2;
+.header_text {      /* title in header */
+    text-align: center;
+}
+.exit_button {      /* exit button in header */
+    justify-self: end;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.search_bar {
+    display: flex;
+    padding-left: 5px;
     grid-column-start: 2;
     grid-column-end: 6;
-}
-.container3{
-    align-self: end;
-    grid-column-start: 6;
-    grid-column-end: 7;
-}
-.container4{
-    height: 100%;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    background-color: burlywood;
-}
-.container6 {
-    display: flex;
-    justify-items: center;
-    grid-column-start: 6;
-    grid-column-end: 7;
-}
-.container7{
-    grid-row-start: 3;
-    grid-row-end: 9;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    border: 2px solid black;
-    background: white;
-}
-.box8 {
-    justify-self: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 9;
-    grid-row-end: 9;
-}
-.box9 {
-    justify-self: center;
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 9;
-    grid-row-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    justify-content: left;
+    align-items: center;
+    font-family: "Perpetua", serif;
+    color: #828692;
+    text-align: left;
+    font-size: 200%;
+    border-color: #707070;
+    border-style: solid;
+    border-width: thin;
 }
 
-h1 {
-    color: #363C4C;
-    font-family: "Ink Free",serif;
-    font-size: clamp(3rem, 2.4286rem + 4.5714vw, 7rem);
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-}
-h2 {
-    color: 	#686868;
-    font-family: "Ink Free",serif;
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-}
-p {
+.square {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: white;
+    justify-content: center;
+    align-items: normal;
+    font-family: "Perpetua", serif;
     color: #828692;
-    font-family: Perpetua,serif;
+    text-align: left;
     font-size: 300%;
+    border-color: #707070;
+    border-style: inset;
+    border-width: thick;
+}
+
+.myrecipes_button_1 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.myrecipes_button_2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+h1 {                /* for page headers */
+    color: #363C4C;
+    font-family: "Ink Free", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {                /* for sub-header text */
+    color: #828692;
+    font-family: "Perpetua", serif;
     font-style: italic;
     text-align: center;
-    margin: auto;
 }
 
-.button {
+p {                 /* for regular text */
+    color: #828692;
+    font-family: "Perpetua", serif;
+}
+
+.button {          /* for all general buttons */
+    display: inline-block;
+    padding: 15px;
     background-color: #A37F5D;
     color: #E5E6EA;
     font-family: "Ink Free",serif;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 15px auto 0;
-    min-width: 25%;
-    max-width: 100%;
-    padding: 12px 4%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
+    font-size: 500%;
 }
 
-.exit_click{
-    background-color: #A37F5D;
-    color: #E5E6EA;
-    font-family: "Ink Free",serif;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 15px auto 0;
-    min-width: 25%;
-    max-width: 100%;
-    padding: 12px 4%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: clamp(2rem, 1.7143rem + 2.2857vw, 4rem);
-}
-
-.back_button {
-    float: left;
-    height: 13%;
-    position:absolute;
-    top: 1%;
-    left:2%;
-}
-
-.center_button {
+.side_button {    /* side buttons for My Recipes page */
+    display: flex;
     justify-content: center;
-    align-content: center;
-    background-color: #9D9D9D;
-    color: #0A3350;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #A37F5D;
+    color: #E5E6EA;
     font-family: "Ink Free",serif;
-    margin: 15px auto 0;
-    padding: 8px 4%;
-    min-width: 25%;
-    max-width: 100%;
     text-align: center;
-    font-size: xx-large;
-    border-radius: 12px;
+    text-decoration: none;
+    font-size: 200%;
+    white-space: normal;
 }
+
