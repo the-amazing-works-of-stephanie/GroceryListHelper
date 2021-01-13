@@ -208,6 +208,69 @@ p {                 /* for regular text */
 
 
 
+/* -------------- Add Item code --------------- */
+
+.additemmain {
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 10% 22% 22% 4% 22% 10%;
+    grid-template-columns: 8% 20% 20% 20% 20% 8%;
+}
+
+.additem_item_desc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.additem_qty_desc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.additem_item_box {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.additem_quantity_box {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.additem_add_list {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    font-size: 75%;
+}
+.additem_edit_item {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    font-size: 75%;
+}
+.additem_myrecipes {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    font-size: 75%;
+}
+
+
+
 /* -------------- My Recipes code --------------- */
 
 .myrecipesmain {
@@ -390,6 +453,22 @@ p {                 /* for regular text */
 /* -------------- Help code --------------- */
 
 .helpmain {
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 25px auto auto 25px;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+
+
+/* -------------- Settings code --------------- */
+
+.settingsmain {
     grid-area: main;
     overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
     padding: 10px 5px 10px 5px;
