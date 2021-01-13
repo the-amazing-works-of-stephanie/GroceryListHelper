@@ -10,7 +10,7 @@ body {
 .parent {
     height: 95vh;      /* 100 vh is entire height of viewport */
     display: grid;
-    grid-template-columns: 1fr;     /* 1fr means "take up any leftover space */
+    grid-template-columns: 1fr;     /* 1fr means "take up any leftover space" */
     grid-template-rows: auto 1fr auto;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
@@ -18,6 +18,7 @@ body {
     grid-template-areas:
         'header'
         'main'
+        'makeListMain'
         'footer';
 }
 
@@ -29,7 +30,7 @@ body {
     grid-template-columns: 1fr minmax(0,600px) 1fr;
 }
 
-.parent > main {
+.parent > main {        /* the home page center grid component */
     grid-area: main;
     overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
     padding: 10px 5px 10px 5px;
@@ -131,4 +132,81 @@ p {                 /* for regular text */
     text-decoration: none;
     font-size: 400%;
 }
+
+
+
+
+/* -------------- Make a Grocery List code --------------- */
+
+.parent > makeListMain {    /* the make a grocery list center grid component */
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 18% 18% 18% 18% 18%;
+    grid-template-columns: 12% 21% 16% 20% 16% 12%;
+}
+
+.item_header {      /* header container for makeList */
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 6px solid #5B5B5B;
+}
+.quantity_header {  /* header container for makeList */
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-bottom: 6px solid #5B5B5B;
+}
+.item_box {         /* square container for makeList */
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: white;
+}
+
+.makelist_button_1 {        /* buttons for makeList */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 75%;
+}
+.makelist_button_2 {        /* buttons for makeList */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 75%;
+}
+.makelist_button_3 {        /* buttons for makeList */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 75%;
+}
+.makelist_button_4 {        /* buttons for makeList */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 75%;
+}
+.makelist_button_5 {        /* buttons for makeList */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    font-size: 75%;
+}
+
+
 
