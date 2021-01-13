@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Recipe</title>
-    <link rel="stylesheet" href="addrecipeCSS.css">
+    <link rel="stylesheet" href="masterstylesheet.css">
 </head>
 <body>
 
-<top-button>Back</top-button>
+<div class = "parent">
+    <header>
+        <div class = "back_button">
+            <a href="homePage.html" class ="button"> Back </a>
+        </div>
+        <h1>Add Recipe</h1>
+        <div class = "exit_button">
+            <button class ="button" id = "closeWindow"> Exit </button>
+        </div>
+    </header>
 
-<h1>Add Recipe</h1>
+    <div class = "addrecipemain">
+        <div class = "recipename_box">
+            <h2>Enter Recipe Name...</h2>
+        </div>
+        <div class = "addphotobutton">
+            <a href="help.html" class ="center_button"> Add Photo </a>
+        </div>
+        <div class = "recipe_box">
+            <h1>Quantity: </h1>
+        </div>
+        <div class = "addrecipebutton">
+            <a href="help.html" class ="center_button"> Add New Recipe </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class = back_button>
+            <a href="help.html" class ="button"> Help </a>
+        </div>
+        <div class = exit_button>
+            <a href="homePage.html" class ="button"> Home </a>
+        </div>
+    </footer>
+</div>
+
+<script src="exitButton.js"></script>
 
 </body>
 </html>

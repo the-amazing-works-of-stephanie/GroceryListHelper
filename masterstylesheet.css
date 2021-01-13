@@ -18,7 +18,6 @@ body {
     grid-template-areas:
         'header'
         'main'
-        'makeListMain'
         'footer';
 }
 
@@ -135,10 +134,9 @@ p {                 /* for regular text */
 
 
 
-
 /* -------------- Make a Grocery List code --------------- */
 
-.parent > makeListMain {    /* the make a grocery list center grid component */
+.makeListMain {    /* the make a grocery list center grid component */
     grid-area: main;
     overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
     padding: 10px 5px 10px 5px;
@@ -210,3 +208,195 @@ p {                 /* for regular text */
 
 
 
+/* -------------- My Recipes code --------------- */
+
+.myrecipesmain {
+    grid-area: main;
+    overflow: auto;         /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 50px 15% 15% 15% auto;
+    grid-template-columns: auto auto auto auto auto 15% auto;
+}
+
+.search_bar {
+    display: flex;
+    padding-left: 5px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    justify-content: left;
+    align-items: center;
+    font-family: "Perpetua", serif;
+    color: #828692;
+    text-align: left;
+    font-size: 200%;
+    border-color: #707070;
+    border-style: solid;
+    border-width: thin;
+}
+.square {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: white;
+    justify-content: center;
+    align-items: normal;
+    font-family: "Perpetua", serif;
+    color: #828692;
+    text-align: left;
+    font-size: 300%;
+    border-color: #707070;
+    border-style: inset;
+    border-width: thick;
+}
+
+.myrecipes_button_1 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.myrecipes_button_2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.side_button {    /* side buttons for My Recipes page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #A37F5D;
+    color: #E5E6EA;
+    font-family: "Ink Free",serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 200%;
+    white-space: normal;
+}
+
+
+
+/* -------------- Add Recipe code --------------- */
+
+.addrecipemain {
+    grid-area: main;
+    overflow: auto; /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 50px 15% auto auto auto 50px;
+    grid-template-columns: 50px 17% 17% 20% 17% 17% 50px;
+}
+
+.recipename_box {        /* text box for user to enter recipe name */
+    display: flex;
+    padding-left: 5px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    justify-content: left;
+    align-items: center;
+    font-family: "Perpetua", serif;
+    color: #828692;
+    text-align: left;
+    font-size: 200%;
+    border-color: #707070;
+    border-style: solid;
+    border-width: thin;
+}
+.recipe_box {           /* container for recipe's quantity, ingredients, & instructions input */
+    display: flex;
+    padding-left: 5px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: white;
+    justify-content: left;
+    align-items: center;
+    font-family: "Perpetua", serif;
+    color: #828692;
+    text-align: left;
+    font-size: 200%;
+    border-color: #707070;
+    border-style: inset;
+    border-width: thick;
+}
+
+.addphotobutton {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 75%;
+}
+.addrecipebutton {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    font-size: 50%;
+}
+
+
+/* -------------- What's In My Kitchen code --------------- */
+
+.whatsinkitchenmain {
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 25px auto auto 25px;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+
+
+/* -------------- My Meal Plan code --------------- */
+
+.mealplanmain {
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 25px auto auto 25px;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+
+
+/* -------------- Help code --------------- */
+
+.helpmain {
+    grid-area: main;
+    overflow: auto;     /* makes the main element scroll, but keeps header&footer in place */
+    padding: 10px 5px 10px 5px;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-rows: 25px auto auto 25px;
+    grid-template-columns: auto auto auto auto auto auto;
+}
